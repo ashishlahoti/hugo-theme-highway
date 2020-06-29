@@ -7,3 +7,4 @@ Loaded Features in Hugo Mainroad Theme
 3. Nested menu and submenu can be configured from config.toml file
 4. Multiple Author support
 5. Generator JSON+LD application json for your blog posts for Search Engine Optimization
+6. Social Icons on each page to share your post on social media
