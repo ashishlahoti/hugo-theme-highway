@@ -1,32 +1,27 @@
 ---
 title: About Us
-date: 2014-04-09
-authorbox: false
 sidebar: false
 menu: main
+# Theme-Defined params
+comments: false # Enable Disqus comments for specific page
+authorbox: false # Enable authorbox for specific page
+toc: false # Enable Table of Contents for specific page
+mathjax: false # Enable MathJax for specific page
+post_navigation: false
 ---
 
-Hugo is a static site engine written in Go.
+{{< figure class="authorbox__avatar" src="/img/avatar.png" alt="Ashish Lahoti" height=120 width=120 >}}
 
+Hey Everyone! I’m Ashish Lahoti. Welcome to the blog site created using Hugo static site generator.
 
-It makes use of a variety of open source projects including:
+When I started using Hugo to build my website, I doesn't have much knowledge about so I chose the Hugo Mainroad Theme to build my blog website.
 
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
-* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-* [Cast](https://github.com/spf13/cast)
+Over the period of time, as my blog website started growing. I wanted to have many features which were not available in Mainroad theme so I started implementing them on my own.
 
-Learn more and contribute on [GitHub](https://github.com/spf13).
+It's time to payback to the community that is why I am sharing Mainroad theme + Features which I have implemented so far:
 
-## Setup
-
-Some fun facts about [Hugo](http://gohugo.io/):
-
-* Built in [Go](http://golang.org/)
-* Loosely inspired by [Jekyll](http://jekyllrb.com/)
-* Primarily developed by [spf13](http://spf13.com/) on the train while commuting to and from Manhattan.
-* Coded in [Vim](http://vim.org) using [spf13-vim](http://vim.spf13.com/)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/spf13/hugo/issues/new) or [ask me on Twitter](https://twitter.com/spf13).
-
-Thanks for reading!
+1. Client Side Search Engine to search content from your entire blog site
+2. Autonumbering feature to autonumber sections and subsections of your blog post
+3. Nested menu and submenu can be configured from config.toml file
+4. Multiple Author support
+5. Generator JSON+LD application json for your blog posts for Search Engine Optimization

@@ -2,6 +2,7 @@
 title: Post with Autonumbering and TOC On
 description: Example of post with autonumbering sections and subsections of article with autonumbering true frontmatter 
 date: 2020-06-25
+author: authorA
 categories:
   - "Category2"
 autonumbering: true

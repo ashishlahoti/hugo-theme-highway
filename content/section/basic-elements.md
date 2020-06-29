@@ -2,6 +2,7 @@
 title: Basic HTML Elements
 description: Example test article that contains basic HTML elements for text formatting on the Web.
 date: 2020-06-25
+author: authorA
 categories:
   - "Category1"
 toc: true

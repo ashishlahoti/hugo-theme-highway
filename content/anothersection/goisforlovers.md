@@ -1,6 +1,7 @@
 ---
 title: "Hugo Template Primer"
 date: 2014-04-02
+author: authorB
 thumbnail: "img/placeholder.png"
 tags:
   - "go"

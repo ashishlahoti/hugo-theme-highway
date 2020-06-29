@@ -1,0 +1,9 @@
+{
+    "name": "Author B",
+    "bio": "Author B has many years of experience in various technologies and a successful tech blogger.",
+    "avatar": "/img/avatar.png",
+    "weight": 1,
+    "social": {
+        "linkedin": "https://www.linkedin.com/authorb"
+    }
+}

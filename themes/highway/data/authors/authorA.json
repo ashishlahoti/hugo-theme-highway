@@ -1,0 +1,9 @@
+{
+    "name": "Author A",
+    "bio": "Author A true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it.",
+    "avatar": "/img/avatar.png",
+    "weight": 1,
+    "social": {
+        "linkedin": "https://www.linkedin.com/authorb"
+    }
+}
