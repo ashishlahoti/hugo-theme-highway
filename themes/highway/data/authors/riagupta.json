@@ -1,0 +1,11 @@
+{
+    "name": "Ria Gupta",
+    "bio": "Ria Gupta is a Java/J2EE Backend developer with 4+ years of experience.",
+    "avatar": "/media/authors/riagupta.jpeg",
+    "weight": 1,
+    "social": {
+        "twitter": "nraboy",
+        "github": "https://www.github.com/nraboy",
+        "website": "https://www.nraboy.com"
+    }
+}

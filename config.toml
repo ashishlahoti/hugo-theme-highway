@@ -1,0 +1,139 @@
+baseURL = "https://codingnconcepts.com/"
+languageCode = "en-us"
+title = "Coding N Concepts"
+disqusShortname = "codingnconcepts" # Enable Disqus comments by entering your Disqus shortname
+googleAnalytics = "UA-XXXXXXXXX-X" # Enable Google Analytics by entering your tracking id
+publishDir = "ashishlahoti.github.io"
+assetDir = "static"
+theme = "highway"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "section"
+    name = "Section"
+    url = "/section"
+    weight = 2
+  [[menu.main]]
+    identifier = "category1"
+    name = "Category1"
+    url = "/categories/category1/"
+    parent = "section"
+    weight = 1
+  [[menu.main]]
+    identifier = "category2"
+    name = "Category2"
+    url = "/categories/category2/"
+    parent = "section"
+    weight = 2
+  [[menu.main]]
+    identifier = "category3"
+    name = "Category3"
+    url = "/categories/category3/"
+    parent = "section"
+    weight = 3
+  [[menu.main]]
+    identifier = "another-section"
+    name = "Another Section"
+    url = "/anothersection/"
+    weight = 3
+  [[menu.main]]
+    identifier = "another-category1"
+    name = "Another Category1"
+    url = "/categories/anothercategory1/"
+    parent = "another-section"
+    weight = 1
+  [[menu.main]]
+    identifier = "another-category2"
+    name = "Another Category2"
+    url = "/categories/anothercategory2/"
+    parent = "another-section"
+    weight = 2  
+
+[Author] # Default Author
+  code = "ashishlahoti"
+  name = "Ashish Lahoti"
+
+[Params]
+  title = "CodingNConcepts"
+  subtitle = "Ashish Lahoti's Technical Blog" # Subtitle of your site. Used in site header
+  description = "Coding N Concepts is a technical blog for developers by developers to help you with coding problems, puzzle-solving, interview preparation, learning concepts in a simplified way." # Site description. Used in meta description
+  logo = "favicon-32x32.png"
+  copyright = "CodingNConcepts" # Footer copyright holder, otherwise will use site title
+  opengraph = true # Enable OpenGraph if true
+  twitter_cards = true # Enable Twitter Cards if true
+  readmore = true # Show "Read more" button in list if true
+  authorbox = true # Show authorbox at bottom of pages if true
+  toc = true # Enable Table of Contents
+  post_navigation = true # Show post navigation at bottom of pages if true
+  post_meta = ["author", "date", "categories", "translations"] # Order of post meta information
+  mainSections = ["section", "anothersection"] # Specify section pages to show on home page and the "Recent articles" widget
+  dateformat = "January 02, 2006" # Change the format of dates
+  mathjax = true # Enable MathJax
+  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
+  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+  highlightColor = "#e22d30" # Override highlight color
+  # customCSS = ["css/custom.css"] # Include custom CSS files
+  # customJS = ["js/custom.js"] # Include custom JS files
+  
+[Params.social.share]
+  facebook = true
+  linkedin = true
+  twitter = true
+  whatsapp = true
+  email = true
+
+[Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "right"  # Configure layout for list pages
+  search = "right"
+  single = false # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  tags_counter = false # Enable counter for each tag in "Tags" widget
+
+[Params.widgets.social]
+  # Enable parts of social widget
+  facebook = "codingnconcepts"
+  twitter = "@codingnconcepts"
+  #instagram = "username"
+  linkedin = "feed/hashtag/codingnconcepts/"
+  #telegram = "username"
+  github = "ashishlahoti"
+  #gitlab = "username"
+  #bitbucket = "username"
+  email = "lahoti.ashish20@gmail.com"
+
+[[Params.widgets.social.custom]]
+  title = "Home Page"
+  url = "http://codingnconcepts.com/"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe= true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+
+[social]
+  facebook = "codingnconcepts"
+  facebook_admin = "xxxxxxxxxxx"
+
+  

@@ -1,0 +1,12 @@
+
+{{ $related := .Site.RegularPages.Related . | first 5 }}
+{{ with $related }}
+<div class="related_post_section">
+    <h2 class = "related_post_title">See Also</h2>
+    <ul class = "related_post">
+        {{ range . }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}
