@@ -11,7 +11,7 @@
 }
 </script>
 {{ else if .IsPage -}}
-{{- $author := index .Site.Data.authors ( .Params.author | default .Site.Author.code ) -}}
+{{- $author := index .Site.Data.authors ( .Params.author | default .Site.Author.code | default "") -}}
 {{- $accountablePerson := .Site.Author.name -}}
 {{- $org_name :=  .Site.Title -}}
 <script type="application/ld+json">
