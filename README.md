@@ -2,12 +2,15 @@
 Loaded Features in Hugo Mainroad Theme
 
 ## Features
-1. Client Side Search Engine to search content from your entire blog site
-2. Autonumbering feature to autonumber sections and subsections of your blog post
-3. Nested menu and submenu can be configured from config.toml file
-4. Multiple Author support
-5. Generator JSON+LD application json for your blog posts for Search Engine Optimization
-6. Social Icons on each page to share your post on social media
+1. [Client Side Search Engine](https://codingnconcepts.com/hugo/client-side-search-engine-hugo/)
+2. [Multiple Author Support for Blog Website](https://codingnconcepts.com/hugo/multiple-authors-hugo/)
+3. [Authonumbering of Headings and subheadings for Blog Posts](https://codingnconcepts.com/hugo/auto-number-headings-hugo/)
+4. [Nested Menu for Blog Website Navigation](https://codingnconcepts.com/hugo/nested-menu-hugo/)
+5. [Social Share Icons for Blog Posts](https://codingnconcepts.com/hugo/social-icons-hugo/)
+6. [Google Analytics](https://codingnconcepts.com/hugo/custom-google-analytics-hugo/)
+7. [RSS Feed](https://codingnconcepts.com/hugo/custom-rss-feed-hugo/)
+8. [sitemap.xml for SEO](https://codingnconcepts.com/hugo/sitemap-hugo/)
+9. [JSON+LD for SEO](https://codingnconcepts.com/hugo/structure-data-json-ld-hugo/)
 
 
 ## Run Example Site
