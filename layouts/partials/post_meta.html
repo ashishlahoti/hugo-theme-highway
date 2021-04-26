@@ -1,3 +1,4 @@
+{{- if .Param "blog_post" }}
 {{- $root := . -}}
 {{- with .Param "post_meta" -}}
 	{{- range $field := . -}}
@@ -5,3 +6,4 @@
 		{{- partial $p $root -}}
 	{{- end -}}
 {{- end -}}
+{{- end }}

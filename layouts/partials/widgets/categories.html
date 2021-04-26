@@ -8,6 +8,7 @@
 			{{- with $.Site.GetPage (printf "/categories/%s" $name) }}
 			<li class="widget__item">
 				<a class="widget__link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+				<span class="category-page-count">{{- if .Site.Params.widgets.categories_counter }}({{ $taxonomy.Count }}){{ end -}}</span>
 			</li>
 			{{- end }}
 		{{- end }}

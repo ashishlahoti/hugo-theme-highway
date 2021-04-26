@@ -12,9 +12,9 @@
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
 	{{ with .OutputFormats.Get "rss" -}}
-	{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+	{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 	{{ end -}}
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Rowdies">
 	{{ $style := resources.Get "css/style.css" | resources.ExecuteAsTemplate "css/style.css" . -}}
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 	{{ range .Site.Params.customCSS -}}
@@ -23,7 +23,8 @@
 	<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
 	<link rel="canonical" href="{{ .Permalink }}">
 	{{- if not .Site.IsServer }}
-		{{ template "_internal/google_analytics_async.html" . }}
+		{{ partial "google_analytics.html" . }}
+		{{ partial "google_adsense.html" . }}
 	{{- end }}
 	{{ partial "site_schema.html" . }}
 </head>
@@ -48,6 +49,9 @@
 {{ range .Site.Params.customJS -}}
 <script src="{{ . | relURL }}"></script>
 {{- end }}
+{{- range .Params.customJS -}}
+<script src="{{ . | relURL }}"></script>
+{{- end -}}
 {{- partial "mathjax.html" . -}}
 {{- partial "mermaid.html" . -}}
 </body>

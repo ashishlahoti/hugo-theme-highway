@@ -136,19 +136,6 @@ You can also use inline Markdown.
 </html>
 ```
 
-{{< highlight html >}}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
-</html>
-{{< /highlight >}}
-
 ## Other stuff — abbr, sub, sup, kbd, etc.
 
 <abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.

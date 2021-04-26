@@ -6,6 +6,13 @@
 
   <section class="social-share">
     <ul class="share-icons">
+      <!-- Buy me a coffee -->
+      <li>
+        <a href="https://www.buymeacoffee.com/codingnconcepts" target="_blank">
+          {{ partial "svg/buymeacoffee.svg" (dict "class" "widget-social__link-button") }}
+        </a>
+      </li>
+
       <!-- Twitter -->
       {{ if .Site.Params.social.share.twitter }}
       <li>

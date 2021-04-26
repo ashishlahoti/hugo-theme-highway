@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main class="main" role="main">
-	<article class="post" {{- if isset .Params "autonumbering" }} autonumbering {{- end }}>
+	<article class="post" {{- if .Param "autonumbering" }} autonumbering {{- end }} {{- if .Param "autoqnumbering" }} autoqnumbering {{- end }}>
 		<header class="post__header">
 			<h1 class="post__title">{{- if .Params.thumbnail }}<img class="post__thumbnail" src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}">{{- end }} {{ .Title }}</h1>
 			{{- with .Params.lead }}
@@ -25,5 +25,5 @@
 {{ partial "related.html" . }}
 {{ partial "authorbox.html" . }}
 {{ partial "post_nav.html" . }}
-{{ partial "comments.html" . }}
+{{/* partial "comments.html" .  */}}
 {{ end }}

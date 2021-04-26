@@ -1,11 +1,12 @@
-baseURL = "https://codingnconcepts.com/"
+baseURL = "https://example.com/"
 languageCode = "en-us"
-title = "Coding N Concepts"
-disqusShortname = "codingnconcepts" # Enable Disqus comments by entering your Disqus shortname
+title = "Hugo Highway Theme"
+disqusShortname = "hugohighwaytheme" # Enable Disqus comments by entering your Disqus shortname
 googleAnalytics = "UA-XXXXXXXXX-X" # Enable Google Analytics by entering your tracking id
-publishDir = "ashishlahoti.github.io"
+publishDir = "" # Directory of the generated Hugo website
 assetDir = "static"
-theme = "highway"
+theme = "hugo-theme-highway"
+themesdir = "../.."
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -62,11 +63,11 @@ theme = "highway"
   name = "Ashish Lahoti"
 
 [Params]
-  title = "CodingNConcepts"
-  subtitle = "Ashish Lahoti's Technical Blog" # Subtitle of your site. Used in site header
-  description = "Coding N Concepts is a technical blog for developers by developers to help you with coding problems, puzzle-solving, interview preparation, learning concepts in a simplified way." # Site description. Used in meta description
+  title = "HugoHighwayTheme"
+  subtitle = "Hugo blog made with love" # Subtitle of your site. Used in site header
+  description = "This is a technical blog made with Hugo Highway Theme" # Site description. Used in meta description
   logo = "/img/favicon.ico"
-  copyright = "CodingNConcepts" # Footer copyright holder, otherwise will use site title
+  copyright = "HugoHighwayTheme" # Footer copyright holder, otherwise will use site title
   opengraph = true # Enable OpenGraph if true
   twitter_cards = true # Enable Twitter Cards if true
   readmore = true # Show "Read more" button in list if true
@@ -80,8 +81,8 @@ theme = "highway"
   mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
   mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
   highlightColor = "#e22d30" # Override highlight color
-  # customCSS = ["css/custom.css"] # Include custom CSS files
-  # customJS = ["js/custom.js"] # Include custom JS files
+  googleAdsense = "ca-pub-XXXXXXXXXXXXX" # Enable Google Adsense by entering ad client id
+  blog_post = true # Show blog post meta such as author, date and categaory in the post header
   
 [Params.social.share]
   facebook = true
@@ -96,27 +97,29 @@ theme = "highway"
   search = "right"
   single = false # Configure layout for single pages
   # Enable widgets in given order
-  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+  widgets = ["search", "social", "categories", "taglist", "recent", "languages"]
 
 [Params.widgets]
   recent_num = 5 # Set the number of articles in the "Recent articles" widget
   tags_counter = false # Enable counter for each tag in "Tags" widget
+  categories_counter = true # Enable counter for each tag in "Categories" widget
 
 [Params.widgets.social]
   # Enable parts of social widget
-  facebook = "codingnconcepts"
-  twitter = "@codingnconcepts"
-  #instagram = "username"
-  linkedin = "feed/hashtag/codingnconcepts/"
-  #telegram = "username"
-  github = "ashishlahoti"
-  #gitlab = "username"
-  #bitbucket = "username"
-  email = "lahoti.ashish20@gmail.com"
+  facebook = "username"
+  instagram = "username"
+  twitter = "@twitter_handle"
+  linkedin = "username"
+  telegram = "username"
+  github = "username"
+  gitlab = "username"
+  bitbucket = "username"
+  email = "abc@xyz.com"
+  buymeacoffee = "username"
 
 [[Params.widgets.social.custom]]
   title = "Home Page"
-  url = "http://codingnconcepts.com/"
+  url = "http://example.com/"
 
 [markup]
   [markup.goldmark.renderer]
@@ -132,8 +135,12 @@ theme = "highway"
     style = "monokai"
     tabWidth = 4
 
-[social]
-  facebook = "codingnconcepts"
-  facebook_admin = "xxxxxxxxxxx"
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  author = "authors"
 
-  
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = "application/rss"
+    baseName = "index"
