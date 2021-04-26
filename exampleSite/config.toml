@@ -6,7 +6,6 @@ googleAnalytics = "UA-XXXXXXXXX-X" # Enable Google Analytics by entering your tr
 publishDir = "" # Directory of the generated Hugo website
 assetDir = "static"
 theme = "hugo-theme-highway"
-themesdir = "../.."
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -111,7 +110,7 @@ themesdir = "../.."
   twitter = "@twitter_handle"
   linkedin = "username"
   telegram = "username"
-  github = "username"
+  github = "ashishlahoti/hugo-theme-highway"
   gitlab = "username"
   bitbucket = "username"
   email = "abc@xyz.com"
