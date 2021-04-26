@@ -15,7 +15,7 @@ Highway is a theme for [Hugo](https://gohugo.io/), a static site generator.
 7. [RSS Feed](https://codingnconcepts.com/hugo/custom-rss-feed-hugo/)
 8. [sitemap.xml for SEO](https://codingnconcepts.com/hugo/sitemap-hugo/)
 9. [JSON+LD for SEO](https://codingnconcepts.com/hugo/structure-data-json-ld-hugo/)
-
+10. [Useful ShortCodes](https://codingnconcepts.com/hugo/custom-shortcode-hugo/)
 
 ## Run Example Site
 
