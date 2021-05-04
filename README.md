@@ -99,5 +99,13 @@ hugo -D
 Output will be in `./public/` directory by default (`-d/--destination` flag to change it, or set publishdir in the config file).
 
 
+## Host Hugo Website on Github 
+You will find it interesting that you can host one website per Github account for FREE!
+
+Follow these simple [steps](https://pages.github.com/) to host your website.
+
+Other Useful links for Github:-
+
+https://docs.github.com/en/github/managing-files-in-a-repository/adding-a-file-to-a-repository
 
 
