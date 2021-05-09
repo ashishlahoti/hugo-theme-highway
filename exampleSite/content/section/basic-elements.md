@@ -5,7 +5,14 @@ date: 2020-06-25
 author: authorA
 categories:
   - "Category1"
-toc: true
+# Theme-Defined params
+comments: false # Enable Disqus comments for specific page
+authorbox: true # Enable authorbox for specific page
+toc: true # Enable Table of Contents for specific page
+mathjax: false # Enable MathJax for specific page
+socialshare: false # Enable social share links after post for specific page
+autonumbering: true # Enable Autonumbering of sections and subsections for specific page
+thumbnail: "" # Thumbnail to be displayed with Post Title
 ---
 
 The main purpose of this article is to make sure that all basic HTML Elements are decorated with CSS so as to not miss any possible elements when creating new themes for Hugo.

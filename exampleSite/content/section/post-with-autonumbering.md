@@ -4,8 +4,14 @@ date: 2020-06-29
 author: authorA
 categories:
   - "Category2"
-autonumbering: true
-toc: true
+# Theme-Defined params
+comments: false # Enable Disqus comments for specific page
+authorbox: true # Enable authorbox for specific page
+toc: true # Enable Table of Contents for specific page
+mathjax: false # Enable MathJax for specific page
+socialshare: false # Enable social share links after post for specific page
+autonumbering: true # Enable Autonumbering of sections and subsections for specific page
+thumbnail: "/img/favicon.ico" # Thumbnail to be displayed with Post Title
 ---
 
 This article demonstrates, how to enable `autonumbering` in your blog post to make post's sections and subsections auto-numbered by CSS
