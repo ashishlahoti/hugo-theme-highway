@@ -11,7 +11,7 @@
 	{{- end }}
 	{{- with $author.name }}
 	<div class="authorbox__header">
-		<span class="authorbox__name">{{ T "authorbox_name" . }}</span>
+		<span class="authorbox__name">{{ T "authorbox_name" }} {{ . }}</span>
 	</div>
 	{{- end }}
 	{{- with $author.bio }}
