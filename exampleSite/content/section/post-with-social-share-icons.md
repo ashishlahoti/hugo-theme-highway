@@ -2,6 +2,9 @@
 title: Post with Social Share Icons
 date: 2020-06-28
 author: authorA
+# Enable Authors taxonomy for author to be displayed in /authors
+authors: 
+  - Author A
 categories:
   - "Category2"
 # Theme-Defined params

@@ -1,7 +1,10 @@
 ---
 title: Post with Auto Numbering
 date: 2020-06-29
-author: authorA
+author: authorB
+# Enable Authors taxonomy for author to be displayed in /authors
+authors: 
+  - Author B
 categories:
   - "Category2"
 # Theme-Defined params
